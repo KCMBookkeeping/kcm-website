@@ -1,0 +1,444 @@
+/* ============================================
+   KCM Bookkeeping — "Ordnung" direction
+   ============================================ */
+
+:root{
+  --linen:#EDE6D6;
+  --linen-alt:#F4EFE3;
+  --walnut:#2B2420;
+  --sage:#6B7F5E;
+  --barn:#A63D40;
+  --slate:#3E5C76;
+  --muted:#6B6355;
+  --card-border:#DCD2BC;
+  --max:1080px;
+}
+
+*, *::before, *::after{ box-sizing:border-box; }
+
+html{ scroll-behavior:smooth; }
+
+body{
+  margin:0;
+  background:var(--linen);
+  color:var(--walnut);
+  font-family:'Karla', -apple-system, sans-serif;
+  font-size:16px;
+  line-height:1.6;
+}
+
+.wrap{
+  max-width:var(--max);
+  margin:0 auto;
+  padding:0 24px;
+}
+
+h1, h2, h3{
+  font-family:'Fraunces', Georgia, serif;
+  font-weight:500;
+  margin:0;
+  letter-spacing:-0.01em;
+}
+
+a{ color:inherit; }
+
+img{ max-width:100%; display:block; }
+
+/* -------- Header -------- */
+
+header{
+  padding:22px 0;
+  position:sticky;
+  top:0;
+  background:rgba(237,230,214,0.92);
+  backdrop-filter:blur(6px);
+  z-index:50;
+  border-bottom:1px solid transparent;
+}
+header.scrolled{ border-bottom-color:var(--card-border); }
+
+header .inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.mark{
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  font-size:19px;
+  text-decoration:none;
+}
+.mark span{ color:var(--barn); }
+
+nav.main-nav{ display:flex; align-items:center; gap:30px; }
+nav.main-nav a{
+  font-size:14px;
+  font-weight:500;
+  text-decoration:none;
+  color:var(--walnut);
+}
+nav.main-nav a:hover{ color:var(--barn); }
+
+.nav-cta{
+  font-size:14px;
+  font-weight:500;
+  padding:11px 20px;
+  background:var(--walnut);
+  color:var(--linen);
+  text-decoration:none;
+  border-radius:2px;
+  white-space:nowrap;
+}
+.nav-cta:hover{ background:var(--barn); }
+
+.menu-btn{
+  display:none;
+  background:none;
+  border:none;
+  font-size:26px;
+  color:var(--walnut);
+  cursor:pointer;
+  padding:4px 8px;
+}
+
+/* -------- Hero -------- */
+
+.hero{
+  padding:88px 0 64px;
+  text-align:center;
+}
+
+.stars-row{
+  display:flex;
+  justify-content:center;
+  gap:16px;
+  margin-bottom:26px;
+}
+.stars-row svg{ width:24px; height:24px; }
+
+.kicker{
+  font-size:13px;
+  color:var(--barn);
+  text-transform:uppercase;
+  letter-spacing:0.14em;
+  margin-bottom:20px;
+  font-weight:500;
+}
+
+.hero h1{
+  font-size:clamp(34px, 6vw, 54px);
+  line-height:1.14;
+  max-width:720px;
+  margin:0 auto 22px;
+}
+.hero h1 em{ font-style:italic; color:var(--sage); }
+
+.hero .sub{
+  font-size:17px;
+  color:var(--muted);
+  max-width:480px;
+  margin:0 auto 36px;
+}
+
+.btn{
+  display:inline-block;
+  font-size:14px;
+  font-weight:500;
+  padding:14px 28px;
+  text-decoration:none;
+  border-radius:2px;
+  cursor:pointer;
+  border:1px solid var(--walnut);
+}
+.btn.primary{ background:var(--walnut); color:var(--linen); }
+.btn.primary:hover{ background:var(--barn); border-color:var(--barn); }
+.btn.ghost{ background:transparent; color:var(--walnut); margin-left:14px; }
+.btn.ghost:hover{ border-color:var(--barn); color:var(--barn); }
+
+.cta-row{ display:flex; justify-content:center; flex-wrap:wrap; gap:0; }
+
+/* -------- Divider -------- */
+
+.divider{
+  height:1px;
+  background:linear-gradient(90deg, transparent, var(--walnut) 20%, var(--walnut) 80%, transparent);
+  opacity:0.2;
+  margin:64px 0;
+}
+
+/* -------- Section shared -------- */
+
+section{ padding:0 0 72px; }
+.section-head{ text-align:center; margin-bottom:44px; }
+.section-head h2{ font-size:clamp(24px, 4vw, 30px); margin-bottom:10px; }
+.section-head p{ color:var(--muted); font-size:15px; max-width:480px; margin:0 auto; }
+
+/* -------- Services -------- */
+
+.tier-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+
+.tier-card{
+  background:#fff;
+  border:1px solid var(--card-border);
+  border-radius:6px;
+  padding:32px 26px;
+  display:flex;
+  flex-direction:column;
+}
+
+.tier-card .icon{ margin-bottom:18px; }
+
+.tier-card h3{ font-size:20px; margin-bottom:10px; }
+
+.tier-card .desc{
+  font-size:14px;
+  color:var(--muted);
+  margin-bottom:18px;
+  flex-grow:1;
+}
+
+.tier-card ul{
+  list-style:none;
+  margin:0 0 22px;
+  padding:0;
+  font-size:13.5px;
+  color:var(--walnut);
+}
+.tier-card ul li{
+  padding:7px 0;
+  border-top:1px solid var(--linen-alt);
+}
+.tier-card ul li:first-child{ border-top:none; }
+
+.tier-card .cta{
+  font-size:13.5px;
+  font-weight:500;
+  text-decoration:none;
+  color:var(--barn);
+  border-bottom:1px solid var(--barn);
+  align-self:flex-start;
+}
+
+.addons{
+  margin-top:48px;
+  background:var(--linen-alt);
+  border:1px solid var(--card-border);
+  border-radius:6px;
+  padding:28px 32px;
+}
+.addons h3{ font-size:16px; margin-bottom:14px; }
+.addons ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:8px 24px;
+  font-size:14px;
+  color:var(--muted);
+}
+.addons ul li::before{ content:"— "; color:var(--sage); }
+
+/* -------- About -------- */
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:28px;
+}
+
+.person-card{
+  background:#fff;
+  border:1px solid var(--card-border);
+  border-radius:6px;
+  padding:30px;
+}
+
+.person-card .initials{
+  width:52px;
+  height:52px;
+  border-radius:50%;
+  background:var(--linen-alt);
+  color:var(--sage);
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-family:'Fraunces', serif;
+  font-weight:600;
+  font-size:18px;
+  margin-bottom:18px;
+}
+
+.person-card h3{ font-size:19px; margin-bottom:2px; }
+.person-card .role{
+  font-size:13px;
+  color:var(--barn);
+  text-transform:uppercase;
+  letter-spacing:0.08em;
+  margin-bottom:16px;
+  font-weight:500;
+}
+.person-card p.bio{ font-size:14.5px; color:var(--muted); margin:0; }
+.person-card .loc{
+  font-size:13px;
+  color:var(--sage);
+  margin-top:16px;
+  font-weight:500;
+}
+
+/* -------- Testimonials -------- */
+
+.testimonial-grid{
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+}
+.testimonial-card{
+  background:var(--linen-alt);
+  border:1px solid var(--card-border);
+  border-radius:6px;
+  padding:26px;
+}
+.testimonial-card p.quote{
+  font-family:'Fraunces', serif;
+  font-style:italic;
+  font-size:16px;
+  color:var(--walnut);
+  margin:0 0 16px;
+}
+.testimonial-card p.attr{
+  font-size:13px;
+  color:var(--muted);
+  margin:0;
+}
+.testimonial-note{
+  text-align:center;
+  font-size:13px;
+  color:var(--muted);
+  margin-top:20px;
+  font-style:italic;
+}
+
+/* -------- Contact -------- */
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+  align-items:start;
+}
+
+.contact-form{
+  background:#fff;
+  border:1px solid var(--card-border);
+  border-radius:6px;
+  padding:32px;
+}
+.contact-form label{
+  display:block;
+  font-size:13px;
+  font-weight:500;
+  margin-bottom:6px;
+  color:var(--walnut);
+}
+.contact-form input,
+.contact-form textarea{
+  width:100%;
+  padding:11px 12px;
+  margin-bottom:18px;
+  border:1px solid var(--card-border);
+  border-radius:4px;
+  font-family:inherit;
+  font-size:14px;
+  background:var(--linen-alt);
+  color:var(--walnut);
+}
+.contact-form textarea{ min-height:110px; resize:vertical; }
+.contact-form button{
+  width:100%;
+  font-family:inherit;
+  font-size:14px;
+  font-weight:500;
+  padding:13px;
+  background:var(--walnut);
+  color:var(--linen);
+  border:none;
+  border-radius:2px;
+  cursor:pointer;
+}
+.contact-form button:hover{ background:var(--barn); }
+.form-note{ font-size:12.5px; color:var(--muted); margin-top:10px; }
+
+.contact-side h3{ font-size:19px; margin-bottom:12px; }
+.contact-side p{ color:var(--muted); font-size:14.5px; margin:0 0 20px; }
+.contact-side .emails{ margin-bottom:28px; }
+.contact-side .emails a{
+  display:block;
+  font-size:14.5px;
+  text-decoration:none;
+  color:var(--barn);
+  margin-bottom:6px;
+}
+
+.calendly-box{
+  border:1px dashed var(--card-border);
+  border-radius:6px;
+  padding:24px;
+  background:var(--linen-alt);
+}
+.calendly-box .cal-title{ font-weight:500; font-size:14.5px; margin-bottom:6px; }
+.calendly-box .cal-sub{ font-size:13px; color:var(--muted); margin-bottom:16px; }
+
+/* -------- Footer -------- */
+
+footer{
+  padding:36px 0;
+  border-top:1px solid var(--card-border);
+  font-size:13px;
+  color:var(--muted);
+}
+footer .inner{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+  gap:10px;
+}
+footer .mark{ font-size:15px; }
+
+/* -------- Responsive -------- */
+
+@media (max-width: 860px){
+  .tier-grid, .testimonial-grid, .about-grid, .contact-grid{
+    grid-template-columns:1fr;
+  }
+  .addons ul{ grid-template-columns:1fr; }
+}
+
+@media (max-width: 700px){
+  nav.main-nav{
+    display:none;
+    position:absolute;
+    top:100%;
+    left:0;
+    right:0;
+    background:var(--linen);
+    border-bottom:1px solid var(--card-border);
+    flex-direction:column;
+    align-items:flex-start;
+    padding:20px 24px 24px;
+    gap:16px;
+  }
+  nav.main-nav.open{ display:flex; }
+  .menu-btn{ display:block; }
+  .nav-cta{ margin-top:6px; }
+  .cta-row{ flex-direction:column; gap:14px; }
+  .btn.ghost{ margin-left:0; }
+  .hero{ padding:56px 0 48px; }
+  section{ padding-bottom:56px; }
+  .divider{ margin:44px 0; }
+}
