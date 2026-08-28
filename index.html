@@ -2,260 +2,104 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>KCM Bookkeeping | Monthly bookkeeping for growing businesses</title>
-<meta name="description" content="KCM Bookkeeping provides reliable monthly bookkeeping for small businesses in Pennsylvania and Utah — clean books, on-time closes, and a direct line to your bookkeeper.">
-
-<!-- Open Graph -->
-<meta property="og:title" content="KCM Bookkeeping">
-<meta property="og:description" content="Steady, dependable monthly bookkeeping for small businesses.">
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://kcmbookkeeping.com">
-<!-- TODO: add og:image once a social share graphic exists -->
-
-<link rel="icon" href="favicon.ico">
-<!-- TODO: add a real favicon.ico / favicon.svg to the repo root -->
-
+<title>KCM Bookkeeping — Finalized Brand Mockup</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#1C1C1C;
+    --brick:#A6192E;
+    --gold:#D4AF37; /* ESTIMATE — not labeled on the reference sheet, confirm exact value */
+    --aegean:#2C6E8E; /* marked as estimate on reference sheet too */
+    --paper:#F6F0DC;
+    --muted:#5C574A;
+    --card-border:#E3D9B8;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:'IBM Plex Sans',sans-serif;}
+  .wrap{max-width:1080px;margin:0 auto;padding:0 24px;}
+  h1,h2,h3{font-family:'Spectral',serif;font-weight:600;margin:0;}
 
-<!-- TODO: Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
--->
+  header{padding:20px 0;border-bottom:1px solid var(--card-border);}
+  header .inner{display:flex;align-items:center;justify-content:space-between;}
+  .brandmark{display:flex;align-items:center;gap:12px;}
+  .brandmark img{width:44px;height:44px;border-radius:50%;}
+  .brandmark .name{font-family:'Spectral',serif;font-weight:600;font-size:19px;}
+  .brandmark .name span{color:var(--brick);}
+  nav a{color:var(--ink);text-decoration:none;font-size:14px;font-weight:500;margin-left:30px;}
+  nav a:hover{color:var(--brick);}
+
+  .hero{padding:90px 0 70px;text-align:center;}
+  .kicker{font-size:13px;color:var(--brick);text-transform:uppercase;letter-spacing:0.12em;margin-bottom:20px;font-weight:600;}
+  .hero h1{font-size:50px;line-height:1.15;max-width:700px;margin:0 auto 22px;}
+  .hero h1 em{font-style:italic;color:var(--aegean);}
+  .hero p{font-size:17px;color:var(--muted);max-width:480px;margin:0 auto 34px;line-height:1.6;}
+  .btn{display:inline-block;font-size:14px;font-weight:500;padding:14px 28px;text-decoration:none;border-radius:3px;}
+  .btn.primary{background:var(--brick);color:#fff;}
+  .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--ink);margin-left:14px;}
+
+  .tier-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;padding:60px 0;}
+  .tier-card{background:#fff;border:1px solid var(--card-border);border-top:3px solid var(--gold);border-radius:4px;padding:26px;}
+  .tier-card h3{font-size:19px;margin-bottom:8px;}
+  .tier-card p{font-size:13.5px;color:var(--muted);margin:0;line-height:1.55;}
+
+  .watermark-section{
+    position:relative;
+    background:#241B14;
+    color:#F0E6D2;
+    padding:70px 0;
+    text-align:center;
+    overflow:hidden;
+  }
+  .watermark-section img{
+    position:absolute;
+    right:-40px; top:50%; transform:translateY(-50%);
+    width:340px; opacity:0.9;
+  }
+  .watermark-section .content{position:relative; max-width:520px; margin:0 auto;}
+  .watermark-section h2{font-size:26px; color:#F0E6D2; margin-bottom:14px;}
+  .watermark-section p{color:#C9BFA8; font-size:14.5px; line-height:1.6;}
+
+  footer{padding:30px 0; font-size:13px; color:var(--muted); display:flex; justify-content:space-between; border-top:1px solid var(--card-border);}
+</style>
 </head>
 <body>
 
-<header id="site-header">
-  <div class="wrap inner">
-    <a href="#top" class="mark">KCM <span>Bookkeeping</span></a>
-    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
-    <nav class="main-nav" id="mainNav">
-      <a href="#services">Services</a>
-      <a href="#about">About</a>
-      <a href="#contact">Contact</a>
-    </nav>
+<header><div class="wrap inner">
+  <div class="brandmark">
+    <img src="images/compass-logo.png" alt="KCM Bookkeeping compass logo">
+    <div class="name">KCM <span>Bookkeeping</span></div>
   </div>
-</header>
+  <nav><a>Services</a><a>About</a><a>Contact</a></nav>
+</div></header>
 
-<main id="top">
+<div class="hero wrap">
+  <div class="kicker">Pennsylvania · Utah</div>
+  <h1>Order for what you've <em>built</em>.</h1>
+  <p>Steady, dependable monthly bookkeeping for small businesses across Pennsylvania and Utah.</p>
+  <a class="btn primary">Book a call</a><a class="btn ghost">See our services</a>
+</div>
 
-  <!-- HERO -->
-  <div class="hero wrap">
-    <div class="stars-row" aria-hidden="true">
-      <svg viewBox="0 0 40 40" fill="none"><path d="M20 2 L26 14 L38 20 L26 26 L20 38 L14 26 L2 20 L14 14 Z" stroke="#A63D40" stroke-width="1.6"/></svg>
-    </div>
-    <div class="kicker">Pennsylvania · Utah</div>
-    <h1>Order for what<br>you've <em>built</em>.</h1>
-    <p class="sub">Steady, dependable monthly bookkeeping — done the way you'd want it done if you had the time to do it yourself.</p>
-    <div class="cta-row">
-      <a href="#contact" class="btn primary">Book a call</a>
-      <a href="#services" class="btn ghost">See our services</a>
-    </div>
-
-    <!-- Hero image -->
-    <img src="images/fin-741iShluYhk-unsplash.jpg" alt="Calculator and ledger sheets on a desk" class="hero-banner site-photo">
+<div class="wrap">
+  <div class="tier-grid">
+    <div class="tier-card"><h3>Starter</h3><p>Up to 50 transactions/mo. Clean books, closed on time.</p></div>
+    <div class="tier-card"><h3>Growth</h3><p>Up to 150 transactions/mo. Cash flow reporting included.</p></div>
+    <div class="tier-card"><h3>Premium</h3><p>Full oversight, sales tax, and payroll coordination.</p></div>
   </div>
+</div>
 
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Three ways to keep things in order</h2>
-        <p>Pick the level of oversight that matches where the business is today. Every tier includes a monthly close and a review call.</p>
-      </div>
-
-      <div class="tier-grid">
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6B7F5E" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/></svg></div>
-          <h3>Starter</h3>
-          <p class="desc">For solo operators and small shops with straightforward books.</p>
-          <ul>
-            <li>Up to 50 transactions/mo</li>
-            <li>Monthly reconciliation &amp; close</li>
-            <li>Monthly review call</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Starter &rarr;</a>
-        </div>
-
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3E5C76" stroke-width="1.6"><path d="M4 20 L4 10 L10 4 L20 14 L20 20 Z"/></svg></div>
-          <h3>Growth</h3>
-          <p class="desc">For businesses scaling up and needing more regular visibility.</p>
-          <ul>
-            <li>Up to 150 transactions/mo</li>
-            <li>Monthly reconciliation &amp; close</li>
-            <li>Monthly review call</li>
-            <li>Cash flow reporting</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Growth &rarr;</a>
-        </div>
-
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A63D40" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7 L12 12 L16 14"/></svg></div>
-          <h3>Premium</h3>
-          <p class="desc">Full financial oversight for businesses with more complex books.</p>
-          <ul>
-            <li>150+ transactions/mo</li>
-            <li>Full financial oversight</li>
-            <li>Sales tax filing</li>
-            <li>Payroll coordination</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Premium &rarr;</a>
-        </div>
-      </div>
-
-      <div class="addons">
-        <h3>Also available, as needed</h3>
-        <ul>
-          <li>Catch-up bookkeeping</li>
-          <li>QuickBooks Online setup &amp; migration</li>
-          <li>1099 preparation</li>
-          <li>Sales tax filing</li>
-          <li>Payroll coordination</li>
-        </ul>
-      </div>
-    </div>
-  </section>
-
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Who's keeping your books</h2>
-        <p>One standard for how the numbers should look, backed by decades of hands-on experience.</p>
-      </div>
-
-      <div class="team-block">
-        <!-- Team workspace image -->
-        <img src="images/masarath-alkhaili-HCUO3S2sPyA-unsplash.jpg" alt="Bookkeeping workspace with calculator and laptop" class="team-photo site-photo">
-
-        <div class="team-copy">
-          <div class="loc-tags">
-            <span class="loc-tag">Lancaster County, PA</span>
-            <span class="loc-tag">Salt Lake City, UT</span>
-          </div>
-          <p class="bio">Together, our team brings more than two decades of combined experience spanning operations, business management, and finance — from leading complex, cross-functional initiatives to working inside banking and financial services.</p>
-          <p class="bio">That mix is by design: one of us focuses on the systems, sales, and operations that keep the business running smoothly, and the other leads service delivery and works directly with clients to keep their books current, accurate, and easy to understand.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- TESTIMONIALS (placeholder) -->
-  <section id="testimonials">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>What clients say</h2>
-        <p>A few words from the businesses we work with.</p>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"Our books have never been this current. We finally know where we stand every month."</p>
-          <p class="attr">— Placeholder, small business owner</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"They caught things our old bookkeeper missed and explained everything in plain language."</p>
-          <p class="attr">— Placeholder, service business</p>
-        </div>
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"Responsive, organized, and easy to work with. Exactly what we needed."</p>
-          <p class="attr">— Placeholder, e-commerce client</p>
-        </div>
-      </div>
-      <p class="testimonial-note">Placeholder quotes — swap in real client testimonials once available.</p>
-    </div>
-  </section>
-
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Let's talk about your books</h2>
-        <p>Reach out or book a call directly — whichever's easier.</p>
-      </div>
-
-      <div class="contact-grid">
-        <form class="contact-form" action="https://formspree.io/f/mqpzyovj" method="POST">
-          <label for="name">Name</label>
-          <input type="text" id="name" name="name" required>
-
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required>
-
-          <label for="business">Business name</label>
-          <input type="text" id="business" name="business">
-
-          <label for="message">What can we help with?</label>
-          <textarea id="message" name="message" required></textarea>
-
-          <button type="submit">Send message</button>
-          <p class="form-note">Goes straight to our team — we'll reply within a business day.</p>
-        </form>
-
-        <div class="contact-side">
-          <h3>Prefer email?</h3>
-          <div class="emails">
-            <a href="mailto:info@kcmbookkeeping.com">info@kcmbookkeeping.com</a>
-          </div>
-
-          <div class="calendly-box">
-            <p class="cal-title">Book a call directly</p>
-            <p class="cal-sub">Grab a time that works for you — no back-and-forth required.</p>
-            <a href="https://calendly.com/kcmbookkeeping/30min" class="btn primary" target="_blank" rel="noopener">Schedule a Meeting</a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-</main>
-
-<footer>
-  <div class="wrap inner">
-    <span class="mark">KCM Bookkeeping</span>
-    <span>Lancaster, PA &middot; Salt Lake City, UT &middot; &copy; <span id="year"></span> KCM Bookkeeping</span>
+<div class="watermark-section">
+  <img src="images/boat-logo.png" alt="Sailboat watermark">
+  <div class="content">
+    <h2>Steady course, every month.</h2>
+    <p>The compass carries the brand up front — the sailboat mark shows up as a secondary watermark in sections like this one, or tucked into backgrounds.</p>
   </div>
-</footer>
+</div>
 
-<script>
-  document.getElementById('year').textContent = new Date().getFullYear();
-
-  var menuBtn = document.getElementById('menuBtn');
-  var mainNav = document.getElementById('mainNav');
-  menuBtn.addEventListener('click', function(){
-    var isOpen = mainNav.classList.toggle('open');
-    menuBtn.setAttribute('aria-expanded', isOpen);
-  });
-  mainNav.querySelectorAll('a').forEach(function(link){
-    link.addEventListener('click', function(){ mainNav.classList.remove('open'); });
-  });
-
-  var header = document.getElementById('site-header');
-  window.addEventListener('scroll', function(){
-    header.classList.toggle('scrolled', window.scrollY > 8);
-  });
-</script>
+<footer><div class="wrap" style="display:flex;justify-content:space-between;width:100%;">
+  <span>KCM Bookkeeping</span><span>Lancaster, PA · Salt Lake City, UT</span>
+</div></footer>
 
 </body>
 </html>
