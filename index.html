@@ -4,41 +4,26 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>KCM Bookkeeping | Monthly bookkeeping for growing businesses</title>
-<meta name="description" content="KCM Bookkeeping provides reliable monthly bookkeeping for small businesses in Pennsylvania and Utah — clean books, on-time closes, and a direct line to your bookkeeper.">
+<meta name="description" content="KCM Bookkeeping provides reliable monthly bookkeeping for small businesses nationwide — clean books, on-time closes, and a direct line to your bookkeeper.">
 
-<!-- Open Graph -->
 <meta property="og:title" content="KCM Bookkeeping">
 <meta property="og:description" content="Steady, dependable monthly bookkeeping for small businesses.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://kcmbookkeeping.com">
-<!-- TODO: add og:image once a social share graphic exists -->
 
 <link rel="icon" href="favicon.ico">
-<!-- TODO: add a real favicon.ico / favicon.svg to the repo root -->
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Spectral:wght@500;600&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
-
-<!-- TODO: Google Analytics — replace G-XXXXXXXXXX with your Measurement ID -->
-<!--
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-XXXXXXXXXX');
-</script>
--->
 </head>
 <body>
 
 <header id="site-header">
   <div class="wrap inner">
-    <a href="#top" class="mark" style="display:flex;align-items:center;gap:10px;">
-      <img src="images/compass-logo.png" alt="KCM Bookkeeping" style="width:36px;height:36px;border-radius:50%;">
-      KCM <span>Bookkeeping</span>
+    <a href="#top" class="mark">
+      <img src="images/compass-logo.png" alt="KCM Bookkeeping">
+      <span class="name">KCM <span>Bookkeeping</span></span>
     </a>
     <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
     <nav class="main-nav" id="mainNav">
@@ -51,154 +36,131 @@
 
 <main id="top">
 
-  <!-- HERO -->
-  <div class="hero wrap">
-    <div class="stars-row" aria-hidden="true">
-      <svg viewBox="0 0 40 40" fill="none"><path d="M20 2 L26 14 L38 20 L26 26 L20 38 L14 26 L2 20 L14 14 Z" stroke="#A63D40" stroke-width="1.6"/></svg>
+  <!-- HERO — Aegean, photo-ready -->
+  <section class="photo-section sec-aegean hero">
+    <!-- TODO: add <img class="photo-bg" src="images/sail-hero.jpg" alt=""> once sailing photo is ready -->
+    <div class="overlay"></div>
+    <div class="content wrap">
+      <div class="hero-inner">
+        <div>
+          <h1>Order for what you've built.</h1>
+          <p class="sub">Steady, dependable monthly bookkeeping, done the way you'd want it done if you had the time to do it yourself.</p>
+          <a href="#contact" class="btn on-dark">Book a call</a>
+          <a href="#services" class="btn ghost-dark">See our services</a>
+        </div>
+        <img src="images/compass-logo.png" alt="" class="hero-compass">
+      </div>
     </div>
-    <div class="kicker">Pennsylvania · Utah</div>
-    <h1>Order for what<br>you've <em>built</em>.</h1>
-    <p class="sub">Steady, dependable monthly bookkeeping — done the way you'd want it done if you had the time to do it yourself.</p>
-    <div class="cta-row">
-      <a href="#contact" class="btn primary">Book a call</a>
-      <a href="#services" class="btn ghost">See our services</a>
-    </div>
+  </section>
 
-    <!-- Hero image -->
-    <img src="images/fin-741iShluYhk-unsplash.jpg" alt="Calculator and ledger sheets on a desk" class="hero-banner site-photo">
-  </div>
-
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- SERVICES -->
-  <section id="services">
-    <div class="wrap">
+  <!-- SERVICES — Ink black, ledger comparison -->
+  <section class="photo-section sec-ink" id="services">
+    <!-- TODO: add <img class="photo-bg" src="images/sail-services.jpg" alt=""> -->
+    <div class="overlay"></div>
+    <div class="content wrap">
       <div class="section-head">
         <h2>Three ways to keep things in order</h2>
-        <p>Pick the level of oversight that matches where the business is today. Every tier includes a monthly close and a review call.</p>
+        <p>Every tier includes a monthly close and a review call — the difference is how much oversight your books need.</p>
       </div>
 
-      <div class="tier-grid">
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#6B7F5E" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="1"/><line x1="3" y1="9" x2="21" y2="9"/></svg></div>
-          <h3>Starter</h3>
-          <p class="desc">For solo operators and small shops with straightforward books.</p>
-          <ul>
-            <li>Up to 50 transactions/mo</li>
-            <li>Monthly reconciliation &amp; close</li>
-            <li>Monthly review call</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Starter &rarr;</a>
-        </div>
-
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#3E5C76" stroke-width="1.6"><path d="M4 20 L4 10 L10 4 L20 14 L20 20 Z"/></svg></div>
-          <h3>Growth</h3>
-          <p class="desc">For businesses scaling up and needing more regular visibility.</p>
-          <ul>
-            <li>Up to 150 transactions/mo</li>
-            <li>Monthly reconciliation &amp; close</li>
-            <li>Monthly review call</li>
-            <li>Cash flow reporting</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Growth &rarr;</a>
-        </div>
-
-        <div class="tier-card">
-          <div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#A63D40" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 7 L12 12 L16 14"/></svg></div>
-          <h3>Premium</h3>
-          <p class="desc">Full financial oversight for businesses with more complex books.</p>
-          <ul>
-            <li>150+ transactions/mo</li>
-            <li>Full financial oversight</li>
-            <li>Sales tax filing</li>
-            <li>Payroll coordination</li>
-          </ul>
-          <a href="#contact" class="cta">Ask about Premium &rarr;</a>
-        </div>
+      <div class="ledger">
+        <table>
+          <tr>
+            <th>Tier</th>
+            <th>Best for</th>
+            <th>What's included</th>
+          </tr>
+          <tr>
+            <td class="tier-name">Starter</td>
+            <td>Solo operators, up to 50 transactions/mo</td>
+            <td><ul><li>Monthly reconciliation &amp; close</li><li>Monthly review call</li></ul></td>
+          </tr>
+          <tr>
+            <td class="tier-name">Growth</td>
+            <td>Scaling businesses, up to 150 transactions/mo</td>
+            <td><ul><li>Everything in Starter</li><li>Cash flow reporting</li></ul></td>
+          </tr>
+          <tr>
+            <td class="tier-name">Premium</td>
+            <td>Complex books, 150+ transactions/mo</td>
+            <td><ul><li>Full financial oversight</li><li>Sales tax filing</li><li>Payroll coordination</li></ul></td>
+          </tr>
+        </table>
       </div>
 
-      <div class="addons">
-        <h3>Also available, as needed</h3>
-        <ul>
-          <li>Catch-up bookkeeping</li>
-          <li>QuickBooks Online setup &amp; migration</li>
-          <li>1099 preparation</li>
-          <li>Sales tax filing</li>
-          <li>Payroll coordination</li>
-        </ul>
+      <div class="addons-strip">
+        <span class="label">Also available:</span>
+        <span class="item">Catch-up bookkeeping</span>
+        <span class="item">QuickBooks Online setup &amp; migration</span>
+        <span class="item">1099 preparation</span>
+        <span class="item">Sales tax filing</span>
+        <span class="item">Payroll coordination</span>
       </div>
 
-      <div style="text-align:center; margin-top:40px;">
-        <a href="#contact" class="btn primary">Get a Quote</a>
+      <div style="margin-top:40px;">
+        <a href="#contact" class="btn on-dark">Get a quote</a>
       </div>
     </div>
   </section>
 
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- ABOUT -->
-  <section id="about">
-    <div class="wrap">
-      <div class="section-head">
-        <h2>Who's keeping your books</h2>
-        <p>One standard for how the numbers should look, backed by decades of hands-on experience.</p>
-      </div>
-
-      <div class="team-block">
-        <!-- Team workspace image -->
-        <img src="images/masarath-alkhaili-HCUO3S2sPyA-unsplash.jpg" alt="Bookkeeping workspace with calculator and laptop" class="team-photo site-photo">
-
-        <div class="team-copy">
-          <div class="loc-tags">
-            <span class="loc-tag">Lancaster County, PA</span>
-            <span class="loc-tag">Salt Lake City, UT</span>
-          </div>
-          <p class="bio">Together, our team brings more than two decades of combined experience spanning operations, business management, and finance — from leading complex, cross-functional initiatives to working inside banking and financial services.</p>
-          <p class="bio">That mix is by design: one of us focuses on the systems, sales, and operations that keep the business running smoothly, and the other leads service delivery and works directly with clients to keep their books current, accurate, and easy to understand.</p>
+  <!-- ABOUT — Gold tint, photo-ready -->
+  <section class="photo-section sec-gold" id="about">
+    <!-- TODO: add <img class="photo-bg" src="images/sail-about.jpg" alt=""> -->
+    <div class="overlay"></div>
+    <div class="content wrap">
+      <div class="about-grid">
+        <img src="images/compass-logo.png" alt="" class="compass-mark-large">
+        <div class="about-copy">
+          <span class="about-badge">Who's keeping your books</span>
+          <p>Together, our team brings more than two decades of combined experience spanning operations, business management, and finance — from leading complex, cross-functional initiatives to working inside banking and financial services.</p>
+          <p>That mix is by design: one of us focuses on the systems, sales, and operations that keep the business running smoothly, and the other leads service delivery and works directly with clients to keep their books current, accurate, and easy to understand.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- TESTIMONIALS (placeholder) -->
-  <section id="testimonials">
-    <div class="wrap">
+  <!-- TESTIMONIALS — Brick, asymmetric list -->
+  <section class="photo-section sec-brick" id="testimonials">
+    <!-- TODO: add <img class="photo-bg" src="images/sail-testimonials.jpg" alt=""> -->
+    <div class="overlay"></div>
+    <div class="content wrap">
       <div class="section-head">
         <h2>What clients say</h2>
         <p>A few words from the businesses we work with.</p>
       </div>
 
-      <div class="testimonial-grid">
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"Our books have never been this current. We finally know where we stand every month."</p>
-          <p class="attr">— Placeholder, small business owner</p>
+      <div class="testi-list">
+        <div class="testi-row">
+          <div class="mark-q">&ldquo;</div>
+          <div>
+            <p class="quote">Our books have never been this current. We finally know where we stand every month.</p>
+            <p class="attr">Placeholder — small business owner</p>
+          </div>
         </div>
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"They caught things our old bookkeeper missed and explained everything in plain language."</p>
-          <p class="attr">— Placeholder, service business</p>
+        <div class="testi-row">
+          <div class="mark-q">&ldquo;</div>
+          <div>
+            <p class="quote">They caught things our old bookkeeper missed and explained everything in plain language.</p>
+            <p class="attr">Placeholder — service business</p>
+          </div>
         </div>
-        <div class="testimonial-card">
-          <div class="img-placeholder avatar-placeholder"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="8" r="3.2"/><path d="M5 20c0-3.5 3-6 7-6s7 2.5 7 6"/></svg></div>
-          <p class="quote">"Responsive, organized, and easy to work with. Exactly what we needed."</p>
-          <p class="attr">— Placeholder, e-commerce client</p>
+        <div class="testi-row">
+          <div class="mark-q">&ldquo;</div>
+          <div>
+            <p class="quote">Responsive, organized, and easy to work with. Exactly what we needed.</p>
+            <p class="attr">Placeholder — e-commerce client</p>
+          </div>
         </div>
       </div>
-      <p class="testimonial-note">Placeholder quotes — swap in real client testimonials once available.</p>
+      <p class="testi-note">Placeholder quotes — swap in real client testimonials once available.</p>
 
-      <div style="text-align:center; margin-top:36px;">
-        <a href="#contact" class="btn primary">Book a Call</a>
+      <div style="margin-top:30px;">
+        <a href="#contact" class="btn on-dark">Book a call</a>
       </div>
     </div>
   </section>
 
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- FAQ -->
+  <!-- FAQ — calm, neutral -->
   <section id="faq">
     <div class="wrap">
       <div class="section-head">
@@ -209,7 +171,7 @@
       <div class="faq-list">
         <details class="faq-item" open>
           <summary>What's included in a monthly plan?</summary>
-          <p>Every tier includes transaction reconciliation, a monthly close, and a review call so you always know where things stand. Higher tiers add cash flow reporting, sales tax filing, and payroll coordination — see the Services section above for the full breakdown.</p>
+          <p>Every tier includes transaction reconciliation, a monthly close, and a review call so you always know where things stand. Higher tiers add cash flow reporting, sales tax filing, and payroll coordination.</p>
         </details>
         <details class="faq-item">
           <summary>How does onboarding work?</summary>
@@ -220,8 +182,8 @@
           <p>Yes — we work inside QuickBooks Online's secure platform rather than passing spreadsheets or files back and forth over email, and access is limited to the two of us.</p>
         </details>
         <details class="faq-item">
-          <summary>Do you work with businesses outside PA and UT?</summary>
-          <p>Our work is fully remote, so we can generally take on clients anywhere in the U.S. — Pennsylvania and Utah are simply where we're personally based.</p>
+          <summary>Do you work with businesses nationwide?</summary>
+          <p>Yes — we're a fully remote practice, so we work with small businesses anywhere in the U.S. Everything runs through QuickBooks Online and scheduled calls, so location never gets in the way.</p>
         </details>
         <details class="faq-item">
           <summary>How do I get started?</summary>
@@ -229,36 +191,32 @@
         </details>
       </div>
 
-      <div style="text-align:center; margin-top:36px;">
-        <a href="#contact" class="btn primary">Book a Call</a>
+      <div style="margin-top:36px;">
+        <a href="#contact" class="btn on-light">Book a call</a>
       </div>
     </div>
   </section>
 
-  <div class="wrap"><div class="divider"></div></div>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <div class="wrap">
+  <!-- CONTACT — Aegean, bookends the hero -->
+  <section class="photo-section sec-aegean" id="contact">
+    <!-- TODO: add <img class="photo-bg" src="images/sail-contact.jpg" alt=""> -->
+    <div class="overlay"></div>
+    <div class="content wrap">
       <div class="section-head">
-        <h2>Let's talk about your books</h2>
-        <p>Reach out or book a call directly — whichever's easier.</p>
+        <h2 style="color:#fff;">Let's talk about your books</h2>
+        <p style="color:#DCEAF0;">Reach out or book a call directly — whichever's easier.</p>
       </div>
 
       <div class="contact-grid">
         <form class="contact-form" action="https://formspree.io/f/mqpzyovj" method="POST">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required>
-
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required>
-
           <label for="business">Business name</label>
           <input type="text" id="business" name="business">
-
           <label for="message">What can we help with?</label>
           <textarea id="message" name="message" required></textarea>
-
           <button type="submit">Send message</button>
           <p class="form-note">Goes straight to our team — we'll reply within a business day.</p>
         </form>
@@ -266,13 +224,13 @@
         <div class="contact-side">
           <h3>Prefer email?</h3>
           <div class="emails">
-            <a href="mailto:info@kcmbookkeeping.com">info@kcmbookkeeping.com</a>
+            <a href="mailto:relax@kcmbookkeeping.com">relax@kcmbookkeeping.com</a>
           </div>
 
           <div class="calendly-box">
             <p class="cal-title">Book a call directly</p>
             <p class="cal-sub">Grab a time that works for you — no back-and-forth required.</p>
-            <a href="https://calendly.com/kcmbookkeeping/30min" class="btn primary" target="_blank" rel="noopener">Schedule a Meeting</a>
+            <a href="https://calendly.com/kcmbookkeeping/30min" class="btn on-dark" target="_blank" rel="noopener">Schedule a meeting</a>
           </div>
         </div>
       </div>
@@ -283,8 +241,8 @@
 
 <footer>
   <div class="wrap inner">
-    <span class="mark">KCM Bookkeeping</span>
-    <span>Lancaster, PA &middot; Salt Lake City, UT &middot; &copy; <span id="year"></span> KCM Bookkeeping</span>
+    <span>KCM Bookkeeping</span>
+    <span>&copy; <span id="year"></span> KCM Bookkeeping</span>
   </div>
 </footer>
 
@@ -299,11 +257,6 @@
   });
   mainNav.querySelectorAll('a').forEach(function(link){
     link.addEventListener('click', function(){ mainNav.classList.remove('open'); });
-  });
-
-  var header = document.getElementById('site-header');
-  window.addEventListener('scroll', function(){
-    header.classList.toggle('scrolled', window.scrollY > 8);
   });
 </script>
 
