@@ -34,7 +34,12 @@ img{ max-width:100%; display:block; }
 
 header{
   padding:18px 0;
-  position:sticky; top:0; z-index:50;
+  position:absolute; top:0; left:0; right:0; z-index:50;
+  background:transparent;
+  transition:background 0.25s, backdrop-filter 0.25s, position 0.25s;
+}
+header.scrolled{
+  position:fixed;
   background:rgba(28,28,28,0.94);
   backdrop-filter:blur(6px);
 }
@@ -81,7 +86,7 @@ nav.main-nav a:hover{ opacity:1; color:var(--gold); }
 .hero-overlay{ background:linear-gradient(180deg, rgba(8,16,24,0.2) 0%, rgba(6,13,20,0.55) 60%, rgba(4,9,15,0.82) 100%) !important; }
 .sec-ink{ background:var(--ink); color:var(--cream); }
 .sec-ink .overlay{ background:rgba(10,10,10,0.68); }
-.services-overlay{ background:rgba(8,14,20,0.52) !important; }
+.services-overlay{ background:linear-gradient(90deg, rgba(8,10,12,0.95) 0%, rgba(8,10,12,0.88) 55%, rgba(10,16,22,0.5) 100%) !important; }
 .sec-gold{ background:#F1E2B0; color:var(--cream-ink); }
 .sec-gold .overlay{ background:rgba(212,175,55,0.22); }
 .sec-brick{ background:var(--brick); color:#FBEEE9; }
@@ -98,7 +103,7 @@ section{ padding:76px 0; }
 .hero .content{ padding:100px 0 90px; text-align:left; }
 .hero-inner{ max-width:640px; }
 .hero h1{ font-size:clamp(36px,5.5vw,54px); line-height:1.14; color:#fff; margin-bottom:22px; }
-.hero p.sub{ font-size:18px; color:#DCEAF0; max-width:460px; margin:0 0 34px; line-height:1.6; }
+.hero p.sub{ font-size:18px; color:#DCEAF0; max-width:460px; margin:38px 0 40px; line-height:1.6; }
 
 .btn{
   display:inline-block; font-size:14px; font-weight:600;
@@ -142,8 +147,8 @@ section{ padding:76px 0; }
 
 .about-grid{ display:grid; grid-template-columns:0.9fr 1.1fr; gap:44px; align-items:center; }
 .about-badge{
-  display:inline-block; font-size:13px; font-weight:600; letter-spacing:0.02em;
-  color:var(--brick); border:1px solid var(--brick); border-radius:20px; padding:6px 16px; margin-bottom:18px;
+  display:block; font-family:'Spectral',serif; font-size:30px; font-weight:600;
+  color:var(--brick); margin-bottom:20px; line-height:1.2;
 }
 .about-copy p{ font-size:17px; line-height:1.7; margin:0 0 16px; }
 .compass-mark-large{ width:100%; max-width:340px; opacity:0.92; }
