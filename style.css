@@ -78,9 +78,10 @@ nav.main-nav a:hover{ opacity:1; color:var(--gold); }
 /* Section color assignments */
 .sec-aegean{ background:var(--aegean); color:#F2F7F9; }
 .sec-aegean .overlay{ background:rgba(20,49,64,0.72); }
-.hero-overlay{ background:linear-gradient(180deg, rgba(20,15,10,0.15) 0%, rgba(15,10,8,0.55) 60%, rgba(10,7,5,0.8) 100%) !important; }
+.hero-overlay{ background:linear-gradient(180deg, rgba(8,16,24,0.2) 0%, rgba(6,13,20,0.55) 60%, rgba(4,9,15,0.82) 100%) !important; }
 .sec-ink{ background:var(--ink); color:var(--cream); }
 .sec-ink .overlay{ background:rgba(10,10,10,0.68); }
+.services-overlay{ background:rgba(8,14,20,0.52) !important; }
 .sec-gold{ background:#F1E2B0; color:var(--cream-ink); }
 .sec-gold .overlay{ background:rgba(212,175,55,0.22); }
 .sec-brick{ background:var(--brick); color:#FBEEE9; }
