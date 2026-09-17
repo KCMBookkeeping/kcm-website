@@ -111,31 +111,26 @@ section{ padding:76px 0; }
 .btn.on-light{ background:var(--ink); color:var(--cream); }
 .btn.on-light:hover{ background:var(--brick); }
 
-/* -------- Services: ledger comparison, not identical cards -------- */
+/* -------- Services: pill-cloud, not tiered cards -------- */
 
-.ledger{ background:rgba(246,240,220,0.06); border:1px solid rgba(246,240,220,0.2); border-radius:6px; overflow:hidden; }
-.ledger table{ width:100%; border-collapse:collapse; }
-.ledger th{
-  text-align:left; font-size:12px; text-transform:uppercase; letter-spacing:0.06em;
-  color:var(--gold); font-weight:600; padding:18px 20px; border-bottom:1px solid rgba(246,240,220,0.25);
+.pill-group{ margin-bottom:34px; }
+.pill-group-title{
+  font-size:13px; text-transform:uppercase; letter-spacing:0.08em;
+  color:var(--gold); font-family:'IBM Plex Sans',sans-serif; font-weight:600;
+  margin-bottom:16px;
 }
-.ledger td{
-  padding:18px 20px; font-size:14.5px; border-bottom:1px solid rgba(246,240,220,0.12);
-  vertical-align:top;
+.pill-row{ display:flex; flex-wrap:wrap; gap:12px; }
+.pill{
+  display:inline-block;
+  font-size:15px; font-weight:500;
+  padding:11px 22px;
+  border:1.5px solid rgba(246,240,220,0.4);
+  border-radius:999px;
+  color:var(--cream);
+  background:rgba(246,240,220,0.04);
+  transition:border-color 0.15s, background 0.15s;
 }
-.ledger tr:last-child td{ border-bottom:none; }
-.ledger td.tier-name{ font-family:'Spectral',serif; font-size:19px; font-weight:600; color:#fff; white-space:nowrap; }
-.ledger td ul{ margin:0; padding:0; list-style:none; }
-.ledger td ul li{ padding:2px 0; opacity:0.85; }
-.ledger td ul li::before{ content:"— "; color:var(--gold); }
-
-.addons-strip{
-  margin-top:28px; padding:22px 24px; border-radius:6px;
-  background:rgba(246,240,220,0.06); border:1px solid rgba(246,240,220,0.18);
-  display:flex; flex-wrap:wrap; gap:10px 28px; align-items:center;
-}
-.addons-strip .label{ font-family:'Spectral',serif; font-weight:600; font-size:15px; color:var(--gold); margin-right:8px; }
-.addons-strip span.item{ font-size:14px; opacity:0.9; }
+.pill:hover{ border-color:var(--gold); background:rgba(212,175,55,0.1); }
 
 /* -------- About: photo section, gold tint -------- */
 
