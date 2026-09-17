@@ -111,26 +111,31 @@ section{ padding:76px 0; }
 .btn.on-light{ background:var(--ink); color:var(--cream); }
 .btn.on-light:hover{ background:var(--brick); }
 
-/* -------- Services: pill-cloud, not tiered cards -------- */
+/* -------- Services: bubble pyramid, not tiered cards -------- */
 
-.pill-group{ margin-bottom:34px; }
-.pill-group-title{
-  font-size:13px; text-transform:uppercase; letter-spacing:0.08em;
-  color:var(--gold); font-family:'IBM Plex Sans',sans-serif; font-weight:600;
-  margin-bottom:16px;
+.pyramid{ display:flex; flex-direction:column; align-items:center; gap:24px; }
+.tier-label{
+  font-size:12px; text-transform:uppercase; letter-spacing:0.08em;
+  color:var(--gold); text-align:center; margin-bottom:-10px; opacity:0.85;
+  font-weight:600;
 }
-.pill-row{ display:flex; flex-wrap:wrap; gap:12px; }
+.tier{ display:flex; justify-content:center; gap:16px; flex-wrap:wrap; }
 .pill{
-  display:inline-block;
-  font-size:15px; font-weight:500;
-  padding:11px 22px;
-  border:1.5px solid rgba(246,240,220,0.4);
-  border-radius:999px;
+  display:inline-flex; align-items:center; justify-content:center;
+  font-size:16px; font-weight:500; text-align:center;
+  padding:20px 30px; border-radius:999px;
   color:var(--cream);
-  background:rgba(246,240,220,0.04);
+  border:1.5px solid rgba(212,175,55,0.6);
+  background:radial-gradient(circle at 30% 30%, rgba(212,175,55,0.16), rgba(246,240,220,0.03));
+  box-shadow:0 6px 18px rgba(0,0,0,0.35);
   transition:border-color 0.15s, background 0.15s;
 }
-.pill:hover{ border-color:var(--gold); background:rgba(212,175,55,0.1); }
+.pill:hover{ border-color:var(--gold); background:radial-gradient(circle at 30% 30%, rgba(212,175,55,0.28), rgba(246,240,220,0.05)); }
+.tier.apex .pill{ font-size:15px; padding:16px 26px; }
+.tier.apex .pill:nth-child(2){ transform:translateY(-4px); }
+.tier.mid .pill:nth-child(2){ transform:translateY(6px); }
+.tier.base .pill{ padding:18px 28px; }
+.tier.base .pill:nth-child(2), .tier.base .pill:nth-child(4){ transform:translateY(8px); }
 
 /* -------- About: photo section, gold tint -------- */
 
@@ -193,10 +198,6 @@ section{ padding:76px 0; }
 .contact-side h3{ font-size:19px; margin-bottom:12px; color:#fff; }
 .contact-photo{ width:100%; aspect-ratio:4/5; object-fit:cover; border-radius:8px; margin-bottom:22px; }
 .contact-side p{ opacity:0.85; font-size:14.5px; margin:0 0 20px; }
-.contact-side .emails a{ display:block; font-size:15px; text-decoration:none; color:var(--gold); margin-bottom:6px; }
-.calendly-box{ border:1px dashed rgba(255,255,255,0.3); border-radius:6px; padding:24px; background:rgba(255,255,255,0.05); }
-.calendly-box .cal-title{ font-weight:600; font-size:14.5px; margin-bottom:6px; }
-.calendly-box .cal-sub{ font-size:13px; opacity:0.75; margin-bottom:16px; }
 
 /* -------- Footer -------- */
 
